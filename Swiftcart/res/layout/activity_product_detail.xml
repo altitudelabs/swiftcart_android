@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2" >
+
+        <!--
+         <android.support.v4.view.ViewPager
+        android:id="@+id/pagerImage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="never" />
+        -->
+
+        <ImageView
+            android:id="@+id/food_image"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:scaleType="fitCenter" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <com.altitudelabs.swiftcart.view.PagerSlidingTabStrip
+                android:id="@+id/pager_tabs"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pager_tab_strip_height"
+                android:layout_alignParentTop="true"
+                android:background="@color/pager_tab_strip_bg_color" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_alignTop="@id/pager_tabs"
+                android:background="@color/product_detail_add_cart_separator_color" />
+
+            <FrameLayout
+                android:id="@+id/cart_tool_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/product_detail_add_cart_separator_color"
+                android:paddingTop="1dip" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/product_detail_add_cart_tool_bar_bg"
+                    android:paddingBottom="5dp"
+                    android:paddingEnd="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingTop="5dp" >
+
+                    <ImageView
+                        android:id="@+id/buttonMinusQuantity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/food_detail_minus" />
+
+                    <TextView
+                        android:id="@+id/textFieldQuantity"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@id/buttonMinusQuantity"
+                        android:layout_toRightOf="@id/buttonMinusQuantity"
+                        android:gravity="center"
+                        android:text="2"
+                        android:textColor="#777"
+                        android:textSize="29dp" />
+
+                    <ImageView
+                        android:id="@+id/buttonAddQuantity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@id/textFieldQuantity"
+                        android:layout_toRightOf="@id/textFieldQuantity"
+                        android:src="@drawable/food_detail_add" />
+
+                    <Button
+                        android:id="@+id/buttonAddToCart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toEndOf="@id/buttonAddQuantity"
+                        android:layout_toRightOf="@id/buttonAddQuantity"
+                        android:background="@drawable/product_detail_add_to_cart_button_bg"
+                        android:text="Add to Cart"
+                        android:textColor="#fff"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+            </FrameLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pagerInfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/cart_tool_bar"
+                android:layout_below="@id/pager_tabs"
+                android:overScrollMode="never" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

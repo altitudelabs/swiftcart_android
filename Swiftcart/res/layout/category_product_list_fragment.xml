@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+ >
+
+    <ProgressBar
+        android:id="@+id/loading_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <com.altitudelabs.swiftcart.view.PagerSlidingTabStrip
+        android:id="@+id/pager_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pager_tab_strip_height"
+        android:layout_gravity="top"
+        android:background="@color/pager_tab_strip_bg_color" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/pager_tabs"
+        android:layout_marginTop="18dp"
+         >
+    </android.support.v4.view.ViewPager>
+
+    <!-- Sort/Filter menu -->
+
+
+    <!--
+         <ViewStub
+        android:id="@+id/sort_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:inflatedId="@+id/sub_sort_menu"
+        android:layout="@layout/category_product_list_fragment_sort_menu" />
+    -->
+
+    <FrameLayout
+        android:id="@+id/sort_menu_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </FrameLayout>
+
+</RelativeLayout>

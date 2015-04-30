@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Swiftcart</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="need_login_title">Oops</string>
+    <string name="need_login_msg">Please login or register for an account before checkout.</string>
+    <string name="need_login_ok">Login Now</string>
+    <string name="need_login_later">Maybe Later</string>
+    
+    <string name="login_result_msg">This account is not verified yet. Please activate this account by confirming the email.</string>
+    
+    <string name="confirmPwNotCorrect">Incorrect password, please try again.</string>
+    <string name="email_invalid">Please enter valid email.</string>
+    <string name="signUpSuccess">Success! Please check your email and activate your Swiftcart account.</string>
+    
+    <string name="EmailEmpty">Please enter valid email.</string>
+    <string name="PwEmpty">Must be at least 8 characters.</string>
+    <string name="ConfirmPwEmpty">Must be at least 8 characters..</string>
+    
+</resources>

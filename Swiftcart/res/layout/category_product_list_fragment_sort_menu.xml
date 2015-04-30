@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:id="@+id/background" >
+
+    <RelativeLayout
+        android:id="@+id/sort_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/sort_menu_bg_color" >
+
+        <!-- Sort menu title -->
+
+        <RelativeLayout
+            android:id="@+id/sort_row_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sort_menu_row_height" >
+
+<!--             <com.altitudelabs.swiftcart.view.TextViewSansLight
+                android:id="@+id/btn_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:background="#00000000"
+                android:paddingEnd="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingStart="15dp"
+                android:text="Clear"
+                android:textColor="@color/sort_menu_text_color_light"
+                android:textSize="20dp" /> -->
+
+            
+
+            <com.altitudelabs.swiftcart.view.TextViewSansLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="-4dp"
+                android:layout_marginStart="-4dp"
+                android:drawableLeft="@drawable/ic_sort"
+                android:drawableStart="@drawable/ic_sort"
+                android:text="  Sort by"
+                android:textColor="@color/sort_menu_text_color_light"
+                android:textSize="@dimen/sort_menu_row_textsize" />
+           
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_alignParentTop="true"
+                android:background="@color/sort_menu_border_color" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_alignParentBottom="true"
+                android:background="@color/sort_menu_border_color" />
+        </RelativeLayout>
+
+        <!-- sort option 1 -->
+
+        <RelativeLayout
+            android:id="@+id/sort_option_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sort_menu_row_height"
+            android:layout_below="@id/sort_row_title" >
+
+            <ImageView
+                android:id="@+id/tick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:paddingEnd="@dimen/sort_menu_tick_padding_right"
+                android:paddingLeft="@dimen/sort_menu_tick_padding_left"
+                android:paddingRight="@dimen/sort_menu_tick_padding_right"
+                android:paddingStart="@dimen/sort_menu_tick_padding_left"
+                android:scaleType="center"
+                android:src="@drawable/ic_sort_tick" />
+
+            <com.altitudelabs.swiftcart.view.TextViewSansLight
+                android:id="@+id/option_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/tick"
+                android:layout_toRightOf="@id/tick"
+                android:text="Alphabetical"
+                android:textColor="@color/sort_menu_text_color_dark"
+                android:textSize="@dimen/sort_menu_row_textsize" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_alignLeft="@id/option_text"
+                android:layout_alignParentBottom="true"
+                android:background="@color/sort_menu_border_color" />
+        </RelativeLayout>
+
+        <!-- Sort option 2 -->
+
+        <RelativeLayout
+            android:id="@+id/sort_option_2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sort_menu_row_height"
+            android:layout_below="@id/sort_option_1" >
+
+            <ImageView
+                android:id="@+id/tick2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingEnd="@dimen/sort_menu_tick_padding_right"
+                android:paddingLeft="@dimen/sort_menu_tick_padding_left"
+                android:paddingRight="@dimen/sort_menu_tick_padding_right"
+                android:paddingStart="@dimen/sort_menu_tick_padding_left"
+                android:scaleType="center"
+                android:src="@drawable/ic_sort_tick" />
+
+            <com.altitudelabs.swiftcart.view.TextViewSansLight
+                android:id="@+id/option_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/tick2"
+                android:layout_toRightOf="@id/tick2"
+                android:text="Price"
+                android:textColor="@color/sort_menu_text_color_dark"
+                android:textSize="@dimen/sort_menu_row_textsize" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_alignLeft="@id/option_text2"
+                android:layout_alignParentBottom="true"
+                android:background="@color/sort_menu_border_color" />
+        </RelativeLayout>
+
+        <!-- Sort option 3 -->
+
+        <RelativeLayout
+            android:id="@+id/sort_option_3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sort_menu_row_height"
+            android:layout_below="@id/sort_option_2" >
+
+            <ImageView
+                android:id="@+id/tick3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingEnd="@dimen/sort_menu_tick_padding_right"
+                android:paddingLeft="@dimen/sort_menu_tick_padding_left"
+                android:paddingRight="@dimen/sort_menu_tick_padding_right"
+                android:paddingStart="@dimen/sort_menu_tick_padding_left"
+                android:scaleType="center"
+                android:src="@drawable/ic_sort_tick" />
+
+            <com.altitudelabs.swiftcart.view.TextViewSansLight
+                android:id="@+id/option_text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/tick3"
+                android:layout_toRightOf="@id/tick3"
+                android:text="Special Offers"
+                android:textColor="@color/sort_menu_text_color_dark"
+                android:textSize="@dimen/sort_menu_row_textsize" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

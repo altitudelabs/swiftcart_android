@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- Bottom checkout info -->
+
+    <LinearLayout
+        android:id="@+id/checkout_info_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/main_drawer_bg_color_green_dark"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/main_checkout_cart_checkout_info_cotainer_padding_left"
+        android:paddingRight="@dimen/main_checkout_cart_checkout_info_cotainer_padding_right"
+        android:paddingStart="@dimen/main_checkout_cart_checkout_info_cotainer_padding_left"
+        android:paddingEnd="@dimen/main_checkout_cart_checkout_info_cotainer_padding_right" >
+
+        <!-- Subtotal row -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/main_checkout_cart_checkout_info_cotainer_padding_left"
+            android:paddingRight="@dimen/main_checkout_cart_checkout_info_cotainer_padding_right"
+            android:paddingStart="@dimen/main_checkout_cart_checkout_info_cotainer_padding_left"
+            android:paddingEnd="@dimen/main_checkout_cart_checkout_info_cotainer_padding_right"
+            android:layout_marginTop="@dimen/main_checkout_cart_info_padding_vertical_top" >
+
+            <com.altitudelabs.swiftcart.view.TextViewSansRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="Subtotal"
+                android:textColor="@color/main_checkout_drawer_text_color_white"
+                android:textSize="17dp" />
+
+            <com.altitudelabs.swiftcart.view.TextViewSansBold
+                android:id="@+id/main_checkout_cart_subtotal_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:text="$0.00"
+                android:textColor="@color/main_checkout_drawer_text_color_white"
+                android:textSize="17dp" />
+        </RelativeLayout>
+
+        <!-- Delivery fee -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/main_checkout_cart_checkout_info_cotainer_padding_left"
+            android:paddingRight="@dimen/main_checkout_cart_checkout_info_cotainer_padding_right"
+            android:paddingStart="@dimen/main_checkout_cart_checkout_info_cotainer_padding_left"
+            android:paddingEnd="@dimen/main_checkout_cart_checkout_info_cotainer_padding_right"
+            android:layout_marginTop="@dimen/main_checkout_cart_info_padding_vertical_between_subtotal_and_delivery_fee" >
+
+            <com.altitudelabs.swiftcart.view.TextViewSansRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="Delivery Fee"
+                android:textColor="@color/main_checkout_drawer_text_color_white"
+                android:textSize="17dp" />
+
+            <com.altitudelabs.swiftcart.view.TextViewSansBold
+                android:id="@+id/main_checkout_cart_delivery_fee_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:text="$0.00"
+                android:textColor="@color/main_checkout_drawer_text_color_white"
+                android:textSize="17dp" />
+        </RelativeLayout>
+
+        <!-- Checkout now button -->
+        <RelativeLayout
+            android:id="@+id/main_checkout_cart_checkout_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/main_checkout_cart_info_padding_vertical_between_delivery_fee_and_checkout_now"
+            android:layout_marginBottom="@dimen/main_checkout_cart_info_padding_vertical_bottom"
+            android:paddingLeft="@dimen/main_checkout_cart_checkout_info_cotainer_padding_left"
+            android:paddingRight="@dimen/main_checkout_cart_checkout_info_cotainer_padding_right"
+            android:paddingStart="@dimen/main_checkout_cart_checkout_info_cotainer_padding_left"
+            android:paddingEnd="@dimen/main_checkout_cart_checkout_info_cotainer_padding_right"
+            android:paddingTop="@dimen/main_checkout_cart_info_checkout_now_vertical_padding"
+            android:paddingBottom="@dimen/main_checkout_cart_info_checkout_now_vertical_padding"
+            android:background="@drawable/checkout_cart_checkout_button_bg" >
+
+            <com.altitudelabs.swiftcart.view.TextViewSansBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="CHECKOUT NOW"
+                android:textColor="@color/main_checkout_drawer_text_color_white"
+                android:textSize="20dp" />
+
+            <com.altitudelabs.swiftcart.view.TextViewSansBold
+                android:id="@+id/total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:text="$0.00"
+                android:textColor="@color/main_checkout_drawer_text_color_white"
+                android:textSize="20dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- shopping cart list -->
+
+    <ListView
+        android:id="@+id/main_checkout_cart_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/checkout_info_container"
+        android:background="@color/main_drawer_bg_color_green_light"
+        android:divider="#00000000"
+        android:dividerHeight="0dip"
+        android:overScrollMode="never" />
+
+    
+
+</RelativeLayout>

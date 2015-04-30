@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include 
+        android:id="@+id/action_bar_search"
+        android:visibility="invisible"
+        layout="@layout/main_action_bar_search"/> 
+       
+    <RelativeLayout
+        android:id="@+id/action_bar_normal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/theme_green"
+        android:paddingEnd="@dimen/main_action_bar_padding_right"
+        android:paddingLeft="0dp"
+        android:paddingRight="@dimen/main_action_bar_padding_right"
+        android:paddingStart="0dp" >
+
+        <!-- LHS -->
+
+        <ImageView
+            android:id="@+id/topbar_menu_button_open_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
+            android:paddingEnd="@dimen/main_action_bar_left_icon_padding_right"
+            android:paddingLeft="@dimen/main_action_bar_left_icon_padding_left"
+            android:paddingRight="@dimen/main_action_bar_left_icon_padding_right"
+            android:paddingStart="@dimen/main_action_bar_left_icon_padding_left"
+            android:src="@drawable/ic_ab_drawer" />
+
+        <!-- LHS Back button with back title -->
+
+        <RelativeLayout
+            android:id="@+id/topbar_back_button_and_title_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true" >
+
+            <ImageView
+                android:id="@+id/topbar_button_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_back"
+                android:scaleType="center"
+                android:paddingEnd="@dimen/main_action_bar_left_icon_padding_right"
+                android:paddingLeft="@dimen/main_action_bar_left_icon_padding_left"
+                android:paddingRight="@dimen/main_action_bar_left_icon_padding_right"
+                android:paddingStart="@dimen/main_action_bar_left_icon_padding_left" />
+
+            <com.altitudelabs.swiftcart.view.TextViewSansLight
+                android:id="@+id/topbar_back_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/topbar_button_back"
+                android:layout_toEndOf="@id/topbar_button_back"
+                android:gravity="center"
+                android:text="Fresh Produce"
+                android:textColor="#ffffff"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <!-- RHS -->
+
+        <ImageView
+            android:id="@+id/topbar_menu_button_open_checkout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
+            android:paddingLeft="@dimen/main_action_bar_right_icon_padding_between_neighbour"
+            android:paddingStart="@dimen/main_action_bar_right_icon_padding_between_neighbour"
+            android:paddingRight="0dp"
+            android:paddingEnd="0dp"
+            android:src="@drawable/ic_ab_cart" />
+
+        <ImageView
+            android:id="@+id/topbar_menu_button_search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
+            android:layout_toLeftOf="@id/topbar_menu_button_open_checkout"
+            android:layout_toStartOf="@id/topbar_menu_button_open_checkout"
+            android:paddingLeft="@dimen/main_action_bar_right_icon_padding_between_neighbour"
+            android:paddingStart="@dimen/main_action_bar_right_icon_padding_between_neighbour"
+            android:paddingRight="@dimen/main_action_bar_right_icon_padding_between_neighbour"
+            android:paddingEnd="@dimen/main_action_bar_right_icon_padding_between_neighbour"
+            android:src="@drawable/ic_ab_search" />
+        
+        <ImageView
+            android:id="@+id/topbar_menu_button_filter_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:scaleType="center"
+            android:layout_toLeftOf="@id/topbar_menu_button_search_button"
+            android:layout_toStartOf="@id/topbar_menu_button_search_button"
+            android:paddingLeft="@dimen/main_action_bar_right_icon_padding_between_neighbour"
+            android:paddingStart="@dimen/main_action_bar_right_icon_padding_between_neighbour"
+            android:paddingRight="@dimen/main_action_bar_right_icon_padding_between_neighbour"
+            android:paddingEnd="@dimen/main_action_bar_right_icon_padding_between_neighbour"
+            android:src="@drawable/ic_ab_sort"
+            android:visibility="gone" />
+
+        <!-- Center title -->
+        <com.altitudelabs.swiftcart.view.TextViewGalano
+            android:id="@+id/top_bar_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Swiftcart"
+            android:textSize="20dp"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+</FrameLayout>

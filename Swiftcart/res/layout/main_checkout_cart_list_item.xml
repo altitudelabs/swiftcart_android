@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/main_checkout_list_item_height"
+    android:minHeight="@dimen/main_checkout_list_item_height" >
+
+    <ImageView
+        android:id="@+id/product_image"
+        android:layout_width="@dimen/main_checkout_list_item_product_image_width"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:background="#fff"
+        android:src="@drawable/ic_dairy"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="@dimen/main_checkout_list_item_product_image_width"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="#f23838"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/main_checkout_list_item_delete_button_textsize"
+        android:text="Delete"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/cart_list_item_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/product_image"
+        android:layout_toEndOf="@id/product_image"
+        android:layout_toLeftOf="@id/delete_button"
+        android:layout_toStartOf="@id/delete_button"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/main_checkout_list_item_info_container_padding_bottom"
+        android:paddingTop="@dimen/main_checkout_list_item_info_container_padding_top"
+        android:paddingLeft="@dimen/main_checkout_list_item_info_container_padding_left"
+        android:paddingStart="@dimen/main_checkout_list_item_info_container_padding_left"
+        android:paddingRight="@dimen/main_checkout_list_item_info_container_padding_right"
+        android:paddingEnd="@dimen/main_checkout_list_item_info_container_padding_right"
+         >
+
+        <com.altitudelabs.swiftcart.view.TextViewSansRegular
+            android:id="@+id/product_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/main_checkout_drawer_text_color_white"
+            android:textSize="@dimen/main_checkout_list_item_title_textsize"
+            android:text="product title" />
+
+        <com.altitudelabs.swiftcart.view.TextViewSansRegular
+            android:id="@+id/product_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/main_checkout_drawer_text_color_grey"
+            android:textSize="@dimen/main_checkout_list_item_weight_textsize"
+            android:text="150g" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/main_checkout_list_item_space_between_2nd_and_3rd_line" >
+
+            <com.altitudelabs.swiftcart.view.TextViewSansRegular
+                android:id="@+id/product_number_and_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/checkout_cart_item_number_and_price_bg"
+                android:textColor="@color/main_drawer_bg_color_green_light"
+                android:textSize="@dimen/main_checkout_list_item_price_and_quantity_textsize"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:paddingStart="7dp"
+                android:paddingEnd="7dp"
+                android:text="2 x 3.50" />
+
+            <com.altitudelabs.swiftcart.view.TextViewSansBold
+                android:id="@+id/product_total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/main_checkout_drawer_text_color_grey"
+                android:textSize="@dimen/main_checkout_list_item_total_price_textsize"
+                android:text="$2.00" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/product_image"
+        android:layout_toEndOf="@id/product_image"
+        android:layout_marginLeft="@dimen/main_checkout_list_item_bottom_line_left_space"
+        android:background="@color/main_checkout_drawer_divider_color" />
+
+</RelativeLayout>

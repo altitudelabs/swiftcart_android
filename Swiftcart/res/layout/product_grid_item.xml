@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/grid_content_container"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_feedback_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="18dp" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" >
+
+            <FrameLayout
+                android:id="@+id/product_image_wrapper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@color/product_item_bg_stoke_color"
+                android:padding="1dip"
+                 >
+
+                <ImageView
+                    android:id="@+id/product_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:adjustViewBounds="false"
+                    android:scaleType="centerInside"
+                    android:background="#ffffff" />
+            </FrameLayout>
+
+            <com.altitudelabs.swiftcart.view.TextViewSansBold
+                android:id="@+id/product_discount_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/product_image_wrapper"
+                android:layout_alignEnd="@id/product_image_wrapper"
+                android:layout_alignRight="@id/product_image_wrapper"
+                android:layout_marginBottom="1dip"
+                android:layout_marginEnd="1dip"
+                android:layout_marginRight="1dip"
+                android:background="@drawable/product_item_label_save_bg"
+                android:paddingBottom="3dp"
+                android:paddingEnd="9dp"
+                android:paddingLeft="9dp"
+                android:paddingRight="9dp"
+                android:paddingStart="9dp"
+                android:paddingTop="3dp"
+                android:text="Save 5% Off"
+                android:textColor="@color/product_item_label_save_text_color"
+                android:textSize="12dp" />
+        </RelativeLayout>
+
+        <com.altitudelabs.swiftcart.view.TextViewSansRegular
+            android:id="@+id/product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minLines="1"
+            android:maxLines="1"
+            android:layout_marginTop="1dp"
+            android:paddingBottom="@dimen/product_grid_item_padding_bottom_between_rows"
+            android:paddingTop="@dimen/product_grid_item_padding_top_between_rows"
+            android:text="Apple"
+            android:textColor="@color/product_item_title_color"
+            android:textSize="16dp" />
+
+        <com.altitudelabs.swiftcart.view.TextViewSansRegular
+            android:id="@+id/product_quantiy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/product_grid_item_padding_bottom_between_rows"
+            android:paddingTop="@dimen/product_grid_item_padding_top_between_rows"
+            android:text="4 per pack"
+            android:textColor="@color/product_item_quanity_color"
+            android:textSize="14dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/product_grid_item_padding_bottom_between_rows"
+            android:paddingTop="@dimen/product_grid_item_padding_top_between_rows" >
+
+            <com.altitudelabs.swiftcart.view.TextViewSansSemibold
+                android:id="@+id/product_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$3.90"
+                android:textColor="@color/product_item_price_discount_color"
+                android:textSize="13dp" />
+
+            <com.altitudelabs.swiftcart.view.TextViewSansSemibold
+                android:id="@+id/product_original_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:text="$4.90"
+                android:textColor="@color/product_item_price_discount_original_color"
+                android:textSize="13dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--
+         <Button
+        android:id="@+id/item_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/product_grid_item_on_click_overlay" />
+    -->
+
+</RelativeLayout>

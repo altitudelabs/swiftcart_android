@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_action_bar_search_bg_color"
+    android:paddingBottom="8dp"
+    android:paddingEnd="12dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:paddingStart="12dp"
+    android:paddingTop="8dp" >
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:background="@android:color/transparent"
+        android:text="Cancel"
+        android:textColor="@color/main_action_bar_search_text_color"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/search_box"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/btn_cancel"
+        android:layout_toStartOf="@id/btn_cancel"
+        android:background="@color/main_action_bar_search_text_view_color"
+        android:drawableLeft="@drawable/ic_ab_search"
+        android:paddingEnd="8dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="8dp"
+        android:paddingStart="12dp"
+        android:textColor="@color/main_action_bar_search_searching_text_color"
+        android:textCursorDrawable="@null"
+        android:textSize="15dp"
+        android:maxLines="1"
+        android:inputType="textFilter"
+        android:imeOptions="actionDone" />
+
+</RelativeLayout>

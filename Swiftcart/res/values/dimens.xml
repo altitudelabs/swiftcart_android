@@ -1,0 +1,85 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">0dp</dimen>
+    <dimen name="activity_vertical_margin">0dp</dimen>
+    
+    <!-- Main activity -->
+    <dimen name="activity_main_drawer_width">300dp</dimen>
+    
+    <!-- Main action bar -->
+    <dimen name="main_action_bar_padding_right">13dp</dimen>
+    
+    <dimen name="main_action_bar_left_icon_padding_left">10dp</dimen>
+    <dimen name="main_action_bar_left_icon_padding_right">20dp</dimen>
+    
+    <dimen name="main_action_bar_right_icon_padding_between_neighbour">10dp</dimen>
+    
+    <!-- Main navigation menu item -->
+    <dimen name="main_navigation_menu_item_height">60dp</dimen>
+    <dimen name="main_navigation_menu_item_padding_left">20dp</dimen>
+    <dimen name="main_navigation_menu_item_padding_right">8dp</dimen>
+    
+    <dimen name="main_navigation_menu_item_icon_size">20dp</dimen>
+    <dimen name="main_navigation_menu_item_margin_between_icon_and_title">9dp</dimen>
+    <dimen name="main_navigation_menu_item_icon_placeholder">25dp</dimen>
+    
+    <dimen name="main_navigation_menu_item_textSize">16dp</dimen>
+    
+    <!-- Main checkout cart -->
+    <dimen name="main_checkout_cart_checkout_info_cotainer_padding_left">12dp</dimen>
+    <dimen name="main_checkout_cart_checkout_info_cotainer_padding_right">12dp</dimen>
+    
+    <!-- Main checkout cart list item -->
+    <dimen name="main_checkout_list_item_height">80dp</dimen>
+    <dimen name="main_checkout_list_item_product_image_width">80dp</dimen>
+    <dimen name="main_checkout_list_item_bottom_line_left_margin">44dp</dimen>
+    <dimen name="main_checkout_list_item_delete_button_textsize">15dp</dimen>
+    <dimen name="main_checkout_list_item_info_container_padding_top">8dp</dimen>
+    <dimen name="main_checkout_list_item_info_container_padding_bottom">3dp</dimen>
+    <dimen name="main_checkout_list_item_info_container_padding_right">8dp</dimen>
+    <dimen name="main_checkout_list_item_info_container_padding_left">8dp</dimen>
+    <dimen name="main_checkout_list_item_bottom_line_left_space">8dp</dimen>
+    <dimen name="main_checkout_list_item_space_between_2nd_and_3rd_line">16dp</dimen>
+    
+    <dimen name="main_checkout_list_item_title_textsize">15dp</dimen>
+    <dimen name="main_checkout_list_item_weight_textsize">11dp</dimen>
+    <dimen name="main_checkout_list_item_price_and_quantity_textsize">11dp</dimen>
+    <dimen name="main_checkout_list_item_total_price_textsize">11dp</dimen>
+    
+    
+    <!-- Main checkout cart bottom checkout info -->
+<!--     <dimen name="main_checkout_cart_info_item_height">40dp</dimen>
+    <dimen name="main_checkout_cart_info_checkout_button_height">50dp</dimen> -->
+    <dimen name="main_checkout_cart_info_padding_vertical_top">10dp</dimen>
+    <dimen name="main_checkout_cart_info_padding_vertical_between_subtotal_and_delivery_fee">10dp</dimen>
+    <dimen name="main_checkout_cart_info_padding_vertical_between_delivery_fee_and_checkout_now">15dp</dimen>
+    <dimen name="main_checkout_cart_info_padding_vertical_bottom">10dp</dimen>
+    <dimen name="main_checkout_cart_info_checkout_now_vertical_padding">10dp</dimen>
+    <dimen name="main_checkout_cart_info_totalHeight">160dp</dimen>
+    
+    <!-- Home product list -->
+    <dimen name="home_product_list_banner_height">140dp</dimen>
+    
+    <!-- Product list item -->
+    <dimen name="product_list_item_padding_left">10dp</dimen>
+    <dimen name="product_list_item_padding_right">10dp</dimen>
+    
+    <!--  Product grid item -->
+    <dimen name="product_grid_item_padding_top_between_rows">0dp</dimen>
+    <dimen name="product_grid_item_padding_bottom_between_rows">0dp</dimen>
+    
+    <!-- Pager Tab Strip -->
+    <dimen name="pager_tab_strip_height">42dp</dimen>
+    <dimen name="pager_tab_strip_slider_height">5dp</dimen>
+    <dimen name="pager_tab_strip_slider_textsize">20dp</dimen>
+    <dimen name="pager_tab_strip_tab_padding">15dp</dimen>
+    
+    <!-- Sort/Filter menu -->
+    <dimen name="sort_menu_tick_padding_left">10dp</dimen>
+    <dimen name="sort_menu_tick_padding_right">10dp</dimen>
+    
+    <dimen name="sort_menu_row_height">50dp</dimen>
+    <dimen name="sort_menu_row_textsize">24dp</dimen>
+    
+</resources>
